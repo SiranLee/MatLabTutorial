@@ -20,10 +20,16 @@ clc
 fib_40 = fibonacci_local(40);
 semilogy(fib_40,'o-');
 p = polyfit(1:40,fib_40',1);
-p
+p 
 
 %% 
 fibonacci_series = @(x) (x+x.^2)./(1-x-x.^2);
+
+%% 
+z = [1,2,3+4i,5];
+z'
+z.'
+
 
 
 
