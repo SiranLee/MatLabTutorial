@@ -48,22 +48,4 @@ load detail
 whos
 image(X); % X是将图像划分成的的像素点的矩阵，默认的map是gray
 colormap(map);
-%%
-for p = 0:.001:1
-    colormap(p*hot+(1-p)*pink)
-    drawnow
-end
-
-%% Knight's Tour
-K = knightstour;
-dotMatrix = zeros(2,64);
-for i = 1:64
-    [row,col] = find(K==i,1);
-    dotMatrix(1,i) = col;
-    dotMatrix(2,i) = row;
-end
-image(K);
-hold on;
-dot2dot(dotMatrix);
-axis image;
 
