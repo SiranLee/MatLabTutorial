@@ -80,7 +80,7 @@ colormap(flipud(jets(depth)));
 % colormap(map)则用来设置图形窗口当前的colormap
 
 % 迷幻特效
-spinmap(10);% spingmap(t): 周期性的旋转(将每个RGB值加2偏移)颜色图，持续10*t秒
+spinmap(10);% spingmap(t): 周期性的旋转颜色图，持续10
 
 
     
